@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKARISA Entertainment – Photography & Broadcasting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ CURSOR -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-trail" id="cursorTrail"></div>
+
+  <!-- ═══════════════════════════════════════ PARTICLES -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ═══════════════════════════════════════ NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/logo.png" alt="SKARISA Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="logo-fallback" style="display:none">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">SKARISA</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#struktur" class="nav-link">Struktur Organisasi</a></li>
+        <li><a href="#anggota" class="nav-link">Anggota</a></li>
+        <li><a href="#absensi" class="nav-link">Absensi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-orb hero-orb--3"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>SKARISA Official Extracurricular</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line title-line--1">SKARISA</span>
+        <span class="title-line title-line--2">ENTERTAINMENT</span>
+      </h1>
+      <p class="hero-sub">Photography &amp; Broadcasting Extracurricular</p>
+      <p class="hero-tagline glitch-text" data-text="Capturing Moments · Broadcasting Stories">
+        Capturing Moments · Broadcasting Stories
+      </p>
+      <div class="hero-cta">
+        <a href="#struktur" class="btn btn--primary">
+          <span>Jelajahi</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#absensi" class="btn btn--outline">Absensi</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="28">0</span>
+          <span class="stat-label">Anggota</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">Admin</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="2026">0</span>
+          <span class="stat-label">Tahun</span>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- ═══════════════════════════════════════ STRUKTUR ORGANISASI -->
+  <section class="section struktur" id="struktur">
+    <div class="section-header">
+      <span class="section-tag">// 01</span>
+      <h2 class="section-title">Struktur <span class="neon-text">Organisasi</span></h2>
+      <p class="section-desc">Tim inti yang memimpin SKARISA Entertainment</p>
+    </div>
+
+    <!-- LEADER -->
+    <div class="leader-wrapper">
+      <div class="leader-card glass-card" id="leaderCard">
+        <div class="leader-glow"></div>
+        <div class="leader-photo-wrap">
+          <div class="leader-photo-ring"></div>
+          <img src="assets/leader.jpg" alt="Foto Leader" class="leader-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="leader-photo-fallback" style="display:none">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="16" fill="url(#lg1)"/><ellipse cx="40" cy="68" rx="24" ry="14" fill="url(#lg1)"/><defs><linearGradient id="lg1" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#00BFFF"/><stop offset="1" stop-color="#8A2BE2"/></linearGradient></defs></svg>
+          </div>
+          <div class="leader-badge-chip">LEADER</div>
+        </div>
+        <div class="leader-info">
+          <div class="leader-crown">
+            <svg viewBox="0 0 32 20" fill="none"><path d="M2 18L8 4L16 12L24 4L30 18H2Z" fill="url(#crown)"/><defs><linearGradient id="crown" x1="0" y1="0" x2="32" y2="20"><stop stop-color="#00BFFF"/><stop offset="1" stop-color="#8A2BE2"/></linearGradient></defs></svg>
+          </div>
+          <h3 class="leader-name">Dwi Ramadani</h3>
+          <p class="leader-role">Ketua SKARISA Entertainment</p>
+          <div class="leader-divider"></div>
+          <p class="leader-quote">"Bersama kita abadikan setiap momen dan sebarkan setiap cerita."</p>
+          <div class="leader-tags">
+            <span class="tag">Photography</span>
+            <span class="tag">Broadcasting</span>
+            <span class="tag">Leadership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADMIN -->
+    <div class="admin-label">
+      <span class="section-tag">// Admin</span>
+    </div>
+    <div class="admin-grid">
+      <div class="admin-card glass-card">
+        <div class="admin-icon-wrap">
+          <svg class="admin-icon" viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="29" r="15" stroke="url(#ag1)" stroke-width="2.5"/>
+            <path d="M12 72c0-15.464 12.536-28 28-28s28 12.536 28 28" stroke="url(#ag1)" stroke-width="2.5" stroke-linecap="round"/>
+            <defs><linearGradient id="ag1" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#00BFFF"/><stop offset="1" stop-color="#8A2BE2"/></linearGradient></defs>
+          </svg>
+          <div class="admin-icon-ring"></div>
+        </div>
+        <div class="admin-badge">ADMIN 1</div>
+        <h3 class="admin-name">Nama Admin 1</h3>
+        <p class="admin-role">Sekretaris / Admin</p>
+        <div class="admin-skills">
+          <span class="skill-dot"></span>
+          <span class="skill-dot"></span>
+          <span class="skill-dot"></span>
+        </div>
+      </div>
+      <div class="admin-card glass-card">
+        <div class="admin-icon-wrap">
+          <svg class="admin-icon" viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="29" r="15" stroke="url(#ag2)" stroke-width="2.5"/>
+            <path d="M12 72c0-15.464 12.536-28 28-28s28 12.536 28 28" stroke="url(#ag2)" stroke-width="2.5" stroke-linecap="round"/>
+            <defs><linearGradient id="ag2" x1="80" y1="0" x2="0" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#8A2BE2"/><stop offset="1" stop-color="#00BFFF"/></linearGradient></defs>
+          </svg>
+          <div class="admin-icon-ring admin-icon-ring--alt"></div>
+        </div>
+        <div class="admin-badge admin-badge--alt">ADMIN 2</div>
+        <h3 class="admin-name">Nama Admin 2</h3>
+        <p class="admin-role">Bendahara / Admin</p>
+        <div class="admin-skills">
+          <span class="skill-dot skill-dot--alt"></span>
+          <span class="skill-dot skill-dot--alt"></span>
+          <span class="skill-dot skill-dot--alt"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ANGGOTA -->
+  <section class="section anggota" id="anggota">
+    <div class="section-header">
+      <span class="section-tag">// 02</span>
+      <h2 class="section-title">Daftar <span class="neon-text">Anggota</span></h2>
+      <p class="section-desc">Seluruh anggota aktif SKARISA Entertainment 2026</p>
+    </div>
+
+    <div class="member-grid" id="memberGrid">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- AUTO SLIDER -->
+    <div class="slider-section">
+      <div class="slider-header">
+        <span class="slider-label">◈ ANGGOTA AKTIF</span>
+        <div class="slider-controls">
+          <div class="slider-dot active"></div>
+          <div class="slider-dot"></div>
+          <div class="slider-dot"></div>
+        </div>
+      </div>
+      <div class="slider-track-wrap">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ABSENSI -->
+  <section class="section absensi" id="absensi">
+    <div class="absensi-bg-orb"></div>
+    <div class="section-header">
+      <span class="section-tag">// 03</span>
+      <h2 class="section-title">Form <span class="neon-text">Absensi</span></h2>
+      <p class="section-desc">Catat kehadiranmu di setiap pertemuan SKARISA</p>
+    </div>
+
+    <div class="form-container">
+      <div class="form-card glass-card">
+        <div class="form-glow"></div>
+        <div class="form-top-bar">
+          <span class="form-status-dot"></span>
+          <span class="form-status-text">SISTEM ABSENSI AKTIF</span>
+          <span class="form-time" id="formTime">--:--:--</span>
+        </div>
+
+        <div class="form-body">
+          <div class="form-group">
+            <label class="form-label" for="nama">
+              <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M3 18c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Nama Lengkap
+            </label>
+            <div class="input-wrap">
+              <input type="text" id="nama" class="form-input" placeholder="Masukkan nama lengkap..." autocomplete="off" />
+              <div class="input-line"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="kelas">
+              <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 4V3M13 4V3M3 9h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Kelas
+            </label>
+            <div class="input-wrap">
+              <input type="text" id="kelas" class="form-input" placeholder="Contoh: XI RPL 1" autocomplete="off" />
+              <div class="input-line"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Status Kehadiran
+            </label>
+            <div class="status-options" id="statusOptions">
+              <label class="status-option" data-value="Hadir">
+                <input type="radio" name="status" value="Hadir" hidden />
+                <span class="status-icon status-icon--hadir">✓</span>
+                <span class="status-text">Hadir</span>
+              </label>
+              <label class="status-option" data-value="Izin">
+                <input type="radio" name="status" value="Izin" hidden />
+                <span class="status-icon status-icon--izin">!</span>
+                <span class="status-text">Izin</span>
+              </label>
+              <label class="status-option" data-value="Sakit">
+                <input type="radio" name="status" value="Sakit" hidden />
+                <span class="status-icon status-icon--sakit">+</span>
+                <span class="status-text">Sakit</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn-submit" id="submitBtn">
+            <span class="btn-submit-text">Kirim Absensi</span>
+            <span class="btn-submit-loader" id="submitLoader" style="display:none">
+              <span class="loader-ring"></span>
+            </span>
+            <svg class="btn-submit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- NOTIFICATION -->
+      <div class="notification" id="notification">
+        <div class="notification-icon" id="notifIcon"></div>
+        <div class="notification-content">
+          <p class="notification-title" id="notifTitle"></p>
+          <p class="notification-msg" id="notifMsg"></p>
+        </div>
+        <button class="notification-close" id="notifClose">✕</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid-bg"></div>
+    <div class="footer-orb"></div>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="SKARISA" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="footer-logo-fallback" style="display:none">
+          <span class="logo-icon">◈</span>
+          <span>SKARISA</span>
+        </div>
+      </div>
+      <div class="footer-title">SKARISA Entertainment</div>
+      <p class="footer-tagline">Capturing Moments, Broadcasting Stories</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2026 SKARISA Entertainment. All Rights Reserved.</p>
+      <p class="footer-sub">Photography &amp; Broadcasting Extracurricular</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
